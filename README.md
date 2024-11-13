@@ -30,7 +30,9 @@ cd Titanic-Survival-Prediction-API
 
 ### Crie e ative um ambiente virtual:
 
+```
 python -m venv venv<br>
+```
 source venv/bin/activate  # Para Linux/MacOS<br>
 venv\Scripts\activate     # Para Windows<br>
 
@@ -53,9 +55,9 @@ A API estará disponível em http://127.0.0.1:5000/.
 
 ### Você pode testar a API utilizando a extensão API REST no seu editor ou qualquer ferramenta que suporte requisições HTTP como Postman.
 ### Crie uma requisição POST para o endpoint /predict com o seguinte corpo JSON:
-
-{<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Pclass": 3,<br>
+```
+{
+  "Pclass": 3,
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Sex": "female",<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Age": 50,<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"SibSp": 1,<br>
@@ -63,6 +65,7 @@ A API estará disponível em http://127.0.0.1:5000/.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Fare": 30,<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Embarked": "C"<br>
 }<br>
+```
 
 ### A resposta da API será no formato:
 
