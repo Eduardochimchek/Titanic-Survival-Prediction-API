@@ -57,22 +57,23 @@ A API estará disponível em http://127.0.0.1:5000/.
 ### Crie uma requisição POST para o endpoint /predict com o seguinte corpo JSON:
 ```
 {
-  "Pclass": 3,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Sex": "female",<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Age": 50,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"SibSp": 1,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Parch": 1,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Fare": 30,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Embarked": "C"<br>
-}<br>
+    "Pclass": 3,
+    "Sex": "female",
+    "Age": 50,
+    "SibSp": 1,
+    "Parch": 1,
+    "Fare": 30,
+    "Embarked": "C"
+}
 ```
 
 ### A resposta da API será no formato:
-
-{<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"message": "Previsao realizada com sucesso!",<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"prediction": 1<br>
-}<br>
+```
+{
+    "message": "Previsao realizada com sucesso!",
+    "prediction": 1
+}
+```
 
 ### Onde:
 
@@ -81,18 +82,20 @@ A API estará disponível em http://127.0.0.1:5000/.
 ### Arquivo de Exemplo (api_titanic.http)
 ### Se você estiver usando a extensão API REST, use o seguinte conteúdo para testar a API diretamente:
 
-POST http://127.0.0.1:5000/predict<br>
-Content-Type: application/json<br>
+```
+POST http://127.0.0.1:5000/predict
+Content-Type: application/json
 
-{<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Pclass": 3,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Sex": "female",<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Age": 50,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"SibSp": 1,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Parch": 1,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Fare": 30,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Embarked": "C"<br>
-}<br>
+{
+    "Pclass": 3,
+    "Sex": "female",
+    "Age": 50,
+    "SibSp": 1,
+    "Parch": 1,
+    "Fare": 30,
+    "Embarked": "C"
+}
+```
 
 ## Estrutura de Arquivos
 
