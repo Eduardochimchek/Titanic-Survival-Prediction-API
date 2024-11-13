@@ -1,74 +1,38 @@
-# Byte-compiled / optimized / DLL files
+# Arquivos e pastas do Python
 __pycache__/
-*.py[cod]
-*$py.class
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.sqlite
 
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-*.egg-info/
-*.egg
-*.whl
-*.dist-info/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.manifest
-*.spec
-
-# Virtual environments
-.venv/
+# Diretórios de ambiente virtual
 venv/
-ENV/
 env/
-pip-log.txt
-pip-delete-this-directory.txt
+.env/
+.virtualenv/
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
-# PyCharm IDE
-.idea/
-
-# VS Code IDE
-.vscode/
-
-# Environments
-.env
-.env.*
-*.env
-
-# Data and log files
+# Arquivos de logs
 *.log
+
+# Arquivos do Jupyter Notebook
+*.ipynb_checkpoints
+
+# Arquivos de saída
 *.csv
 *.tsv
-*.dat
-*.db
-*.sqlite3
 
-# Model and output files
-*.joblib
-*.pkl
-*.h5
-*.sav
-*.npy
-*.npz
+# Arquivos do modelo treinado
+modelo_titanic.pkl
 
-# OS generated files
+# Arquivos do sistema operacional
 .DS_Store
 Thumbs.db
-Desktop.ini
 
-# Jupyter Notebook extensions
-*.nbconvert/
-*.nb.html
+# Arquivos de configuração do IDE
+.vscode/
+.idea/
+
+# Arquivos temporários
+*.bak
+*.swp
