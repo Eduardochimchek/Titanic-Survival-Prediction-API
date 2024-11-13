@@ -55,20 +55,20 @@ A API estará disponível em http://127.0.0.1:5000/.
 ### Crie uma requisição POST para o endpoint /predict com o seguinte corpo JSON:
 
 {<br>
-&nbsp;&nbsp;&nbsp;"Pclass": 3,<br>
-&nbsp;"Sex": "female",<br>
-&nbsp;"Age": 50,<br>
-&nbsp;"SibSp": 1,<br>
-&nbsp;"Parch": 1,<br>
-&nbsp;"Fare": 30,<br>
-&nbsp;"Embarked": "C"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Pclass": 3,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Sex": "female",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Age": 50,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"SibSp": 1,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Parch": 1,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Fare": 30,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Embarked": "C"<br>
 }<br>
 
 ### A resposta da API será no formato:
 
 {<br>
-  "message": "Previsao realizada com sucesso!",<br>
-  "prediction": 1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"message": "Previsao realizada com sucesso!",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"prediction": 1<br>
 }<br>
 
 ### Onde:
@@ -82,13 +82,13 @@ POST http://127.0.0.1:5000/predict<br>
 Content-Type: application/json<br>
 
 {<br>
-  "Pclass": 3,<br>
-  "Sex": "female",<br>
-  "Age": 50,<br>
-  "SibSp": 1,<br>
-  "Parch": 1,<br>
-  "Fare": 30,<br>
-  "Embarked": "C"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Pclass": 3,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Sex": "female",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Age": 50,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"SibSp": 1,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Parch": 1,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Fare": 30,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Embarked": "C"<br>
 }<br>
 
 ## Estrutura de Arquivos
@@ -96,7 +96,7 @@ Content-Type: application/json<br>
 Titanic-Survival-Prediction-API/<br>
 ── app.py                   * Código principal da API<br>
 ── model/                     * Pasta com o modelo treinado<br>
-   └── modelo_titanic.pkl     * Modelo de predição do Titanic<br>
+&nbsp;&nbsp;&nbsp;└── modelo_titanic.pkl     * Modelo de predição do Titanic<br>
 ── Titanic.csv               * Dataset do Titanic<br>
 ── Titanic_Machine_Learning.ipynb  * Jupyter Notebook de treinamento do modelo<br>
 ── api_titanic.http          * Arquivo para testar a API com a extensão API REST<br>
