@@ -29,7 +29,7 @@ Content-Type: application/json
 #POST http://127.0.0.1:5000/predict
 #Content-Type: application/json
 #
-#{
+# {
 #  "Pclass": 3,
 #  "Sex": "male",
 #  "Age": 45,
@@ -37,4 +37,4 @@ Content-Type: application/json
 #  "Parch": 2,
 #  "Fare": 10,
 #  "Embarked": "S"
-#}
+# }
